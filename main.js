@@ -26,7 +26,7 @@ const newModulo = 21 % 5 === 1;
 
 // 7
 function returnString(str) {
-  const returnString = ("lets go!");
+  return str
 }
 returnString();
 
@@ -34,7 +34,7 @@ returnString();
 function add(x, y) {
   // x and y are numbers
   // add x and y together and return the value
- const add = (10 + 5);
+ return x + y;
 
 }
 add();
@@ -42,7 +42,7 @@ add();
 // 9
 function subtract(x, y) {
   // subtract y from x and return the value
-  const subtract = (10 - 5);
+  return x - y;
   
 }
 subtract();
@@ -50,7 +50,7 @@ subtract();
 // 10
 function multiply(x, y) {
   // multiply x by y and return the value
-  const multiply = (4 * 2);
+  return x * y;
   
 }
 multiply();
@@ -58,7 +58,7 @@ multiply();
 // 11
 function divide(x, y) {
   // divide x by y and return the value
-  const divide = (6 / 3);
+  return x / y;
   
 }
 divide();
@@ -67,31 +67,28 @@ divide();
 function areEqual(x, y) {
   // return true if x and y are the same
   // otherwise return false
- if (5 === 5) {
-   return true;
- } else {
-   return false;
+  return x == y
  }
- }
- areEqual();
+
 
 // 13
 function areSameLength(str1, str2) {
   // return true if the two strings have the same length
   // otherwise return false
-  if (str1 === str2) {
-    return areSameLength.length;
-  } else {
+  if (str1.length=== str2.length) {
+    return true;
+  }
+   else {
     return false;
   }
   }
-  areSameLength();
+
 
 // 14
 function lessThanNinety(num) {
   // return true if the function argument: num , is less than ninety
   // otherwise return false
-  if (80 < 90) {
+  if (num < 90) {
     return true;
   } else {
     return false;
@@ -102,7 +99,7 @@ function lessThanNinety(num) {
 function greaterThanFifty(num) {
   // return true if num is greater than fifty
   // otherwise return false
-if (100 > 50) {
+if (num > 50) {
   return true;
  } else {
     return false
@@ -112,7 +109,7 @@ greaterThanFifty();
 // 16
 function getRemainder(x, y) {
   // return the remainder from dividing x by y
-  const getRemainder = (5 % 2);
+  return x % y;
 }
 getRemainder();
 // 17
@@ -142,25 +139,26 @@ function isOdd(num) {
 function square(num) {
   // square num and return the new value
   // hint: NOT square root!
-  const square = Math.pow(6, 2);
+  return Math.pow(6, 2);
 }
 square();
 // 20
 function cube(num) {
   // cube num and return the new value
-  const cube = Math.cube(2);
+  return Math.cube(2);
 }
 cube();
 // 21
 function raiseToPower(num, exponent) {
   // raise num to whatever power is passed in as exponent
-  const raiseToPower = (2 ** 4);
+  return 2 ** 4;
 }
 raiseToPower();
 // 22
 function roundNumber(num) {
   // round num and return it
   // code here
+  return Math.round(num);
 }
 // 23
 function roundUp(num) {
@@ -171,22 +169,21 @@ function roundUp(num) {
 function addExclamationPoint(str) {
   // add an exclamation point to the end of str and return the new string
   // 'hello world' -> 'hello world!'
-  const addExclamationPoint = (`hello world!`);
-  return addExclamationPoint
+    return (`hello world!`);
 }
+  
 // 25
 function combineNames(firstName, lastName) {
   // return firstName and lastName combined as one string and separated by a space.
   // 'Code', 'Tracker' -> 'Code Tracker'
-  const combineNames = (firstName + " " + lastName);
-  return combineNames;
+  return (firstName + " " + lastName);
 }
 combineNames();
 // 26
 function getGreeting(name) {
   // Take the name string and concatenate other strings onto it so it takes the following form:
   // 'Sam' -> 'Hello Sam!'
-  let name = "Sam";
+  name = "Sam";
   return (`Hello ${name}`);
 }
 getGreeting();
@@ -196,11 +193,12 @@ getGreeting();
 function getRectangleArea(length, width) {
   // return the area of the rectangle by using length and width
   // code here
+  return length * width;
 }
 // 28
 function getTriangleArea(base, height) {
   // return the area of the triangle by using base and height
-  return (base * height);
+  return (base * height / 2);
 }
 getTriangleArea(number);
 // Do not modify code below this line.
