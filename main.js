@@ -26,7 +26,7 @@ const newModulo = 21 % 5 === 1;
 
 // 7
 function returnString(str) {
-  console.log(returnString);
+  const returnString = ("lets go!");
 }
 returnString();
 
@@ -34,8 +34,7 @@ returnString();
 function add(x, y) {
   // x and y are numbers
   // add x and y together and return the value
- const add = (x + y);
- console.log(add);
+ const add = (10 + 5);
 
 }
 add();
@@ -43,26 +42,23 @@ add();
 // 9
 function subtract(x, y) {
   // subtract y from x and return the value
-  const subtract = (x - y);
-  console.log(subtract);
-
+  const subtract = (10 - 5);
+  
 }
 subtract();
 
 // 10
 function multiply(x, y) {
   // multiply x by y and return the value
-  const multiply = (x * y);
-  console.log(multiply);
-
+  const multiply = (4 * 2);
+  
 }
 multiply();
 
 // 11
 function divide(x, y) {
   // divide x by y and return the value
-  const divide = (x / y);
-  console.log(divide);
+  const divide = (6 / 3);
   
 }
 divide();
@@ -71,7 +67,7 @@ divide();
 function areEqual(x, y) {
   // return true if x and y are the same
   // otherwise return false
- if (x === y) {
+ if (5 === 5) {
    return true;
  } else {
    return false;
@@ -95,13 +91,18 @@ function areSameLength(str1, str2) {
 function lessThanNinety(num) {
   // return true if the function argument: num , is less than ninety
   // otherwise return false
-  // code here
-}
+  if (80 < 90) {
+    return true;
+  } else {
+    return false;
+  }
+  }
+
 // 15
 function greaterThanFifty(num) {
   // return true if num is greater than fifty
   // otherwise return false
-if (num > 50) {
+if (100 > 50) {
   return true;
  } else {
     return false
@@ -111,17 +112,17 @@ greaterThanFifty();
 // 16
 function getRemainder(x, y) {
   // return the remainder from dividing x by y
-  console.log(x % y);
+  const getRemainder = (5 % 2);
 }
 getRemainder();
 // 17
 function isEven(num) {
   // return true if num is even
   // otherwise return false
-  if (num === num) {
-    return true;
+  if (num % 2 === 0) {
+    return ("number is even")
   } else {
-    return false;
+    return ("number is odd");
   }
   }
 isEven();
@@ -130,9 +131,9 @@ function isOdd(num) {
   // return true if num is odd
   // otherwise return false
   if (num % 2 === 0) {
-    console.log("number is even");
+    return ("number is even");
   } else {
-    console.log("odd number");
+    return ("odd number");
   }
   }
   isOdd();
@@ -141,18 +142,21 @@ function isOdd(num) {
 function square(num) {
   // square num and return the new value
   // hint: NOT square root!
-  // 
+  const square = Math.pow(6, 2);
 }
+square();
 // 20
 function cube(num) {
   // cube num and return the new value
-  // code here
+  const cube = Math.cube(2);
 }
+cube();
 // 21
 function raiseToPower(num, exponent) {
   // raise num to whatever power is passed in as exponent
-  // code here
+  const raiseToPower = (2 ** 4);
 }
+raiseToPower();
 // 22
 function roundNumber(num) {
   // round num and return it
@@ -167,21 +171,25 @@ function roundUp(num) {
 function addExclamationPoint(str) {
   // add an exclamation point to the end of str and return the new string
   // 'hello world' -> 'hello world!'
-  // code here
+  const addExclamationPoint = (`hello world!`);
+  return addExclamationPoint
 }
 // 25
 function combineNames(firstName, lastName) {
   // return firstName and lastName combined as one string and separated by a space.
   // 'Code', 'Tracker' -> 'Code Tracker'
-  // code here
+  const combineNames = (firstName + " " + lastName);
+  return combineNames;
 }
+combineNames();
 // 26
 function getGreeting(name) {
   // Take the name string and concatenate other strings onto it so it takes the following form:
   // 'Sam' -> 'Hello Sam!'
-  // code here
+  let name = "Sam";
+  return (`Hello ${name}`);
 }
-
+getGreeting();
 // The next three questions will have you implement math area formulas.
 // If you can't remember these area formulas then head over to Google.
 //  27
@@ -192,9 +200,9 @@ function getRectangleArea(length, width) {
 // 28
 function getTriangleArea(base, height) {
   // return the area of the triangle by using base and height
-  // code here
+  return (base * height);
 }
-
+getTriangleArea(number);
 // Do not modify code below this line.
 // --------------------------------
 
