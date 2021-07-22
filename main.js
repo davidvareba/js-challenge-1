@@ -2,7 +2,7 @@
 //In these first 6 questions, replace `null` with the answer
 
 //1. create a string variable, it can contain anything
-const newString = "Test string";
+const newString = "string";
 
 //2. create a number variable, it can be any number
 const newNum = 7;
@@ -26,134 +26,126 @@ const newModulo = 21 % 5 === 1;
 
 // 7
 function returnString(str) {
-  return str
+  //simply return the string provided: str
+  return str;
 }
-returnString();
 
 // 8
 function add(x, y) {
   // x and y are numbers
   // add x and y together and return the value
- return x + y;
-
+  // code here
+  return x + y;
 }
-add();
 
 // 9
 function subtract(x, y) {
   // subtract y from x and return the value
+  // code here
   return x - y;
-  
 }
-subtract();
 
 // 10
 function multiply(x, y) {
   // multiply x by y and return the value
+  // code here
   return x * y;
-  
 }
-multiply();
 
 // 11
 function divide(x, y) {
   // divide x by y and return the value
+  // code here
   return x / y;
-  
 }
-divide();
 
 // 12
 function areEqual(x, y) {
   // return true if x and y are the same
   // otherwise return false
-  return x == y
- }
-
-
+  // code here
+  return x == y;
+}
 // 13
 function areSameLength(str1, str2) {
   // return true if the two strings have the same length
   // otherwise return false
-  if (str1.length=== str2.length) {
+  // code here
+  if (str1.length === str2.length) {
     return true;
-  }
-   else {
+  } else {
     return false;
   }
-  }
-
-
+}
 // 14
 function lessThanNinety(num) {
   // return true if the function argument: num , is less than ninety
   // otherwise return false
+  // code here
   if (num < 90) {
     return true;
   } else {
     return false;
   }
-  }
-
+}
 // 15
 function greaterThanFifty(num) {
   // return true if num is greater than fifty
   // otherwise return false
-if (num > 50) {
-  return true;
- } else {
-    return false
+  // code here
+  if (num > 50){
+    return true;
+  } else {
+    return false;
   }
-  }
-greaterThanFifty();
+}
 // 16
 function getRemainder(x, y) {
   // return the remainder from dividing x by y
+  // code here
   return x % y;
 }
-getRemainder();
 // 17
 function isEven(num) {
   // return true if num is even
   // otherwise return false
+  // code here
   if (num % 2 === 0) {
-    return ("number is even")
+    return true;
   } else {
-    return ("number is odd");
+    return false;
   }
-  }
-isEven();
+}
 // 18
 function isOdd(num) {
   // return true if num is odd
   // otherwise return false
-  if (num % 2 === 0) {
-    return ("number is even");
+  // code here
+  if (num % 2 !== 0){
+    return true;
   } else {
-    return ("odd number");
+    return false;
   }
-  }
-  isOdd();
-
+}
 // 19
 function square(num) {
   // square num and return the new value
   // hint: NOT square root!
-  return Math.pow(6, 2);
+  // code here
+  return num * num;
 }
-square();
 // 20
 function cube(num) {
   // cube num and return the new value
-  return Math.cube(2);
+  // code here
+  return num * num * num;
 }
-cube();
 // 21
 function raiseToPower(num, exponent) {
   // raise num to whatever power is passed in as exponent
-  return 2 ** 4;
+  // code here
+  return num ** exponent;
 }
-raiseToPower();
 // 22
 function roundNumber(num) {
   // round num and return it
@@ -164,29 +156,30 @@ function roundNumber(num) {
 function roundUp(num) {
   // round num up and return it
   // code here
+  return Math.ceil(num);
 }
 // 24
 function addExclamationPoint(str) {
   // add an exclamation point to the end of str and return the new string
   // 'hello world' -> 'hello world!'
-    return (`hello world!`);
+  // code here
+  return `${str}!`;
 }
-  
 // 25
 function combineNames(firstName, lastName) {
   // return firstName and lastName combined as one string and separated by a space.
   // 'Code', 'Tracker' -> 'Code Tracker'
-  return (firstName + " " + lastName);
+  // code here
+  return `${firstName} ${lastName}`;
 }
-combineNames();
 // 26
 function getGreeting(name) {
   // Take the name string and concatenate other strings onto it so it takes the following form:
   // 'Sam' -> 'Hello Sam!'
-  name = "Sam";
-  return (`Hello ${name}`);
+  // code here
+  return `Hello ${name}!`;
 }
-getGreeting();
+
 // The next three questions will have you implement math area formulas.
 // If you can't remember these area formulas then head over to Google.
 //  27
@@ -198,9 +191,10 @@ function getRectangleArea(length, width) {
 // 28
 function getTriangleArea(base, height) {
   // return the area of the triangle by using base and height
-  return (base * height / 2);
+  // code here
+  return base * height / 2;
 }
-getTriangleArea(number);
+
 // Do not modify code below this line.
 // --------------------------------
 
@@ -234,3 +228,4 @@ module.exports = {
   getRectangleArea,
   getTriangleArea,
 };
+
